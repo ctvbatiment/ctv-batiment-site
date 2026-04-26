@@ -176,21 +176,21 @@ export default function ConstructionSite() {
                       <MapPin className="text-orange-600 flex-shrink-0 mt-1" />
                       <div>
                         <p className="font-medium text-slate-900">Adresse</p>
-                        <p className="text-slate-600">Île-de-France, France</p>
+                        <p className="text-slate-600">25 Rue des Beauvettes, 95370 Montigny-lès-Cormeilles, France</p>
                       </div>
                     </div>
                     <div className="flex gap-4">
                       <Phone className="text-orange-600 flex-shrink-0 mt-1" />
                       <div>
                         <p className="font-medium text-slate-900">Téléphone</p>
-                        <p className="text-slate-600">+33 (0)1 XX XX XX XX</p>
+                        <p className="text-slate-600">+33 (0)7 60 62 87 39</p>
                       </div>
                     </div>
                     <div className="flex gap-4">
                       <Mail className="text-orange-600 flex-shrink-0 mt-1" />
                       <div>
                         <p className="font-medium text-slate-900">Email</p>
-                        <p className="text-slate-600">contact@ctvbatiment.fr</p>
+                        <p className="text-slate-600">ctv.entreprise@gmail.com</p>
                       </div>
                     </div>
                   </div>
@@ -210,15 +210,15 @@ export default function ConstructionSite() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Nos Services</h2>
-              <p className="text-xl text-slate-600">Construction, rénovation et consultation en bâtiment</p>
+              <p className="text-xl text-slate-600">Construction et rénovation </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               {[
                 { icon: '🏢', title: 'Construction', desc: 'Bâtiments neufs avec expertise structurelle' },
-                { icon: '🔨', title: 'Rénovation', desc: 'Transformation et amélioration de bâtiments' },
+                { icon: '🔨', title: 'Rénovation', desc: 'Transformation et isolation de bâtiments' },
                 { icon: '🎓', title: 'Consultation', desc: 'Conseils d\'expert en projets de bâtiment' },
-                { icon: '⚡', title: 'Installations', desc: 'Électricité, chauffage, plomberie' },
+                { icon: '⚡', title: 'Installations', desc: 'Électricité, chauffage, plomberie, menuiserie' },
               ].map((service, i) => (
                 <div key={i} className="bg-slate-50 border border-slate-200 rounded-lg p-8 hover:border-orange-600 hover:shadow-lg transition">
                   <div className="text-5xl mb-4">{service.icon}</div>
@@ -412,17 +412,17 @@ export default function ConstructionSite() {
               <div>
                 <Phone className="text-orange-600 mx-auto mb-4" size={32} />
                 <p className="font-medium text-slate-900">Téléphone</p>
-                <p className="text-slate-600">+33 (0)1 XX XX XX XX</p>
+                <p className="text-slate-600">+33 (0)7 60 62 87 39</p>
               </div>
               <div>
                 <Mail className="text-orange-600 mx-auto mb-4" size={32} />
                 <p className="font-medium text-slate-900">Email</p>
-                <p className="text-slate-600">contact@ctvbatiment.fr</p>
+                <p className="text-slate-600">ctv.entreprise@gmail.com</p>
               </div>
               <div>
                 <MapPin className="text-orange-600 mx-auto mb-4" size={32} />
                 <p className="font-medium text-slate-900">Localisation</p>
-                <p className="text-slate-600">Île-de-France</p>
+                <p className="text-slate-600">25 Rue des Beauvettes, 95370 Montigny-lès-Cormeilles</p>
               </div>
             </div>
           </div>
@@ -442,8 +442,8 @@ export default function ConstructionSite() {
             </div>
             {[
               { title: 'Services', items: ['Construction', 'Rénovation', 'Consultation'] },
-              { title: 'Contact', items: ['+33 (0)1 XX XX XX XX', 'contact@ctvbatiment.fr'] },
-              { title: 'Localisation', items: ['Île-de-France', 'France'] },
+              { title: 'Contact', items: ['+33 (0)7 60 62 87 39', ' ctv.entreprise@gmail.com'] },
+              { title: 'Localisation', items: ['25 Rue des Beauvettes, 95370 Montigny-lès-Cormeilles', 'France'] },
             ].map((col, i) => (
               <div key={i}>
                 <h4 className="font-bold mb-4">{col.title}</h4>
