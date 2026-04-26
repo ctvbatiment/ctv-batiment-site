@@ -9,12 +9,18 @@ export default function ConstructionSite() {
   const [consultData, setConsultData] = useState({ name: '', email: '', phone: '', service: '', message: '' });
 
   const projects = [
-    { id: 1, title: 'Façade Moderne', category: 'Façade', image: '📐', color: 'from-orange-600 to-orange-400' },
-    { id: 2, title: 'Chantier en Cours', category: 'Gros Œuvre', image: '🏗️', color: 'from-slate-700 to-slate-500' },
-    { id: 3, title: 'Installation Électrique', category: 'Installation', image: '⚡', color: 'from-amber-600 to-amber-400' },
-    { id: 4, title: 'Chauffage et Isolation', category: 'Énergie', image: '🔥', color: 'from-red-600 to-red-400' },
-    { id: 5, title: 'Couverture Toiture', category: 'Toiture', image: '🏠', color: 'from-yellow-700 to-yellow-500' },
-    { id: 6, title: 'Projet Complet', category: 'Bâtiment', image: '🏢', color: 'from-slate-800 to-slate-600' },
+    { id: 1, title: 'Façade Moderne', category: 'Façade', image: '/photos_optimisees/6b452778e0b5428aba8414571f871d6c_optimized.jpg' },
+    { id: 2, title: 'Chantier en Cours', category: 'Gros Œuvre', image: '/photos_optimisees/bf2f2c3c13c242cc86b7c7a25ad80aed_optimized.jpg' },
+    { id: 3, title: 'Installation Électrique', category: 'Installation', image: '/photos_optimisees/556f2ffffa604692a2f82c72cf309de1_optimized.jpg' },
+    { id: 4, title: 'Chauffage et Isolation', category: 'Énergie', image: '/photos_optimisees/38c0b473fbf8491081e1764cb1d3e5a8_optimized.jpg' },
+    { id: 5, title: 'Couverture Toiture', category: 'Toiture', image: '/photos_optimisees/506c2e6674a34fe08387f3cbcb98d66d_optimized.jpg' },
+    { id: 6, title: 'Projet Complet', category: 'Bâtiment', image: '/photos_optimisees/7332a74a79f64ecbbfdc12f8b55a6bf3_optimized.jpg' },
+    { id: 7, title: 'Construction Neuve', category: 'Bâtiment', image: '/photos_optimisees/99502d8e60f34301848796e3344daeb5_optimized.jpg' },
+    { id: 8, title: 'Rénovation Complète', category: 'Rénovation', image: '/photos_optimisees/1457e21921104ff18a51ad1af4f0096c_optimized.jpg' },
+    { id: 9, title: 'Extension Maison', category: 'Extension', image: '/photos_optimisees/16830cd5dfdc495dbd1d760c1f547004_optimized.jpg' },
+    { id: 10, title: 'Travaux Intérieurs', category: 'Aménagement', image: '/photos_optimisees/d22cf2ef083f4eaca9f41f1366ff122e_optimized.jpg' },
+    { id: 11, title: 'Finitions Qualité', category: 'Finitions', image: '/photos_optimisees/d22cf2ef083f4eaca9f41f1366ff122e_1_optimized.jpg' },
+    { id: 12, title: 'Projet en Détail', category: 'Portfolio', image: '/photos_optimisees/WhatsApp_Image_20260424_at_16_41_53_optimized.jpg' },
   ];
 
   const handleInputChange = (e, setter) => {
@@ -147,8 +153,12 @@ export default function ConstructionSite() {
             <div className="grid md:grid-cols-3 gap-8">
               {projects.map(project => (
                 <div key={project.id} className="group cursor-pointer">
-                  <div className={`bg-gradient-to-br ${project.color} rounded-lg h-64 flex items-center justify-center text-7xl transform group-hover:scale-105 transition-transform duration-300 shadow-lg`}>
-                    {project.image}
+                  <div className="rounded-lg h-64 overflow-hidden transform group-hover:scale-105 transition-transform duration-300 shadow-lg bg-slate-200">
+                    <img 
+                      src={project.image} 
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <h3 className="text-lg font-bold text-slate-900 mt-4">{project.title}</h3>
                   <p className="text-sm text-orange-600 font-medium">{project.category}</p>
