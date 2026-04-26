@@ -432,8 +432,8 @@ export default function ConstructionSite() {
             </div>
             {[
               { title: 'Services', items: ['Construction', 'Rénovation', 'Consultation'] },
-              { title: 'Contact', items: ['+33 (0)1 XX XX XX XX', 'contact@ctvbatiment.fr'] },
-              { title: 'Localisation', items: ['Île-de-France', 'France'] },
+              { title: 'Contact', items: ['+33 (0)7 60 62 87 39', ' ctv.entreprise@gmail.com'] },
+              { title: 'Localisation', items: ['25 Rue des Beauvettes, 95370 Montigny-lès-Cormeilles', 'France'] },
             ].map((col, i) => (
               <div key={i}>
                 <h4 className="font-bold mb-4">{col.title}</h4>
